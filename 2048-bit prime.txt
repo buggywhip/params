@@ -1,0 +1,9 @@
+# This is a 2048-bit prime (256 bytes) packaged as parameters suitable for a Diffie-Hellman 
+# exchange.  Any number of users may use these parameters to initinate any number of DH key 
+# agreeements.  (Syntax is Python)
+
+dhparams = {'p': 'f782e65822d356db5e138592184ff60e02e35908b34c858200cd1e30b91f51c24794eac8995826526c9018cff06e874bb45a341a78aaea2737ded22f41b647388d0d84869e119d997dd772b6936fdd8efb1c25ac4ffc3ca3cd2dfa32b70793af415da2e16e3a3e28d4420aa7fc4840ce2463b532d7c2222dd663eead95a9205f882f5c944127cbab4ffb5b263eb3fde9d6149dad73623825d0a858956acd5798923dc46d75145374ef7da72f0b2d2117bb1e45d59432960a2bdaee00bda7c6e31317c5849c563966c05cca3ae7f246f810ff7001637dc2f6e7e74f188f53bf1b89386bec097144eb484c51257704ac6a38b80cec8cf5ae8429d384c220fcc317', 'g': '05'}
+
+# created by OpenSSL called from a Python program using the M2Crypto interface on 5/22/05 at 10:52pm.
+# independent tests verified as prime using ent.py (Element Number Theory written by William Stein, 
+# UW, Seattle)
