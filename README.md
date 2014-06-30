@@ -18,8 +18,3 @@ ALL CONDITIONS, NO EXCEPTIONS.  USE SIGNIFIES ACCEPTANCE OF
 ALL RISK.
 
 The numbers are free for any use.  
-
---
-
-
-
