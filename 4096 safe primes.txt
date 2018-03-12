@@ -3,175 +3,206 @@
 # number of users may re-use these parameters to initiate 
 # any number of DH key agreements.  (Both users of a DH 
 # exchange must agree to use the same parameters.)
+#
+# THESE NUMBERS ARE MADE AVAILABLE "AS-IS" WITHOUT WARRANTY 
+# OR GUARANTEE OF ANY KIND, EXPRESS OR IMPLIED, UNDER ANY 
+# AND ALL CONDITIONS, NO EXCEPTIONS.  USE SIGNIFIES ACCEPTANCE 
+# OF ALL RISK AND CONSEQUENCES.
+#
+# These numbers are free for any use.  
+#
+
+######################################################################
+# 4096 safe prime #1
+
+      -----BEGIN DH PARAMETERS-----
+      MIICCAKCAgEAjxHSevSz8gGKWUzVYz+dew2nnJjyl7b9Q6HRNjAX6CDRX/ehCtAG
+      kHi6TBAavhWYk5zQRotoHnEvch5M0Y+nU0XfGRp0i7KVPxIxXPAOxjXGShTr2ta6
+      m+BA7dWiV5vTo7b24U0jS7C91fh9PDYFDid/VdWIndYbLjkxcNCGU5xDrpDUbm7P
+      SJMv456Qlne79KH6NWo61U+U9Y9cNvEA1OszXv/m2lEkdP/GEitvyMoxYc9nT2lt
+      NH3/AAYmAOjUISaykefmUMVVFsz/lwM+06zBQXzgaHC43476pns1IweNc4cn3pgG
+      TMD8UekoAY9dawbqymOGKsI5fF5Hk3YK1TjQbeqzhPWf4IiVwgJPEkZgizslubz0
+      zNtuSSRJJFFQG3nGPz3J/HPDl8nx30fX6g4DIAzVm7tNpMzeGphpPwV36OM/idqZ
+      jDgx3Y2gO4enHZK4j8TeTTBbC2BRwaA0PhWxhKWoyDuMXw++L79xuBUn90CxTzsK
+      hfPlzhOR67NzcLmyLEktXO8Q32zLGwjfGRlhSOSy0vERXNwtS/t6G5eEIOae/6HW
+      uv9Yq+MqihRt0u6fcThjZe1cdnamNhLJmf1dP63ltCCuaUQ6DgE8K0hY8PQvRz9Y
+      NVtujWtbbeWKeRHcJPq8laXAthyxMyMPW9Rj4B22T0zOrvWRUfUOjcMCAQI=
+      -----END DH PARAMETERS-----
 
 
-################################################################
-# a 4096 safe prime
+   formatted for Python:
+      dhparams = {'p': b'008f11d27af4b3f2018a594cd5633f9d7b0da79c98f29\
+      7b6fd43a1d1363017e820d15ff7a10ad0069078ba4c101abe1598939cd0468b6\
+      81e712f721e4cd18fa75345df191a748bb2953f12315cf00ec635c64a14ebdad\
+      6ba9be040edd5a2579bd3a3b6f6e14d234bb0bdd5f87d3c36050e277f55d5889\
+      dd61b2e393170d086539c43ae90d46e6ecf48932fe39e909677bbf4a1fa356a3\
+      ad54f94f58f5c36f100d4eb335effe6da512474ffc6122b6fc8ca3161cf674f6\
+      96d347dff00062600e8d42126b291e7e650c55516ccff97033ed3acc1417ce06\
+      870b8df8efaa67b3523078d738727de98064cc0fc51e928018f5d6b06eaca638\
+      62ac2397c5e4793760ad538d06deab384f59fe08895c2024f1246608b3b25b9b\
+      cf4ccdb6e4924492451501b79c63f3dc9fc73c397c9f1df47d7ea0e03200cd59\
+      bbb4da4ccde1a98693f0577e8e33f89da998c3831dd8da03b87a71d92b88fc4d\
+      e4d305b0b6051c1a0343e15b184a5a8c83b8c5f0fbe2fbf71b81527f740b14f3\
+      b0a85f3e5ce1391ebb37370b9b22c492d5cef10df6ccb1b08df19196148e4b2d\
+      2f1115cdc2d4bfb7a1b978420e69effa1d6baff58abe32a8a146dd2ee9f71386\
+      365ed5c7676a63612c999fd5d3fade5b420ae69443a0e013c2b4858f0f42f473\
+      f58355b6e8d6b5b6de58a7911dc24fabc95a5c0b61cb133230f5bd463e01db64\
+      f4cceaef59151f50e8dc3', 'g': b'02'}
 
-Diffie-Hellman-Parameters: (4096 bit)
+   to validate:
+      $ openssl dhparam -text -check -in <filepath_to_PEM_block>
 
-   prime:
-       00:8f:11:d2:7a:f4:b3:f2:01:8a:59:4c:d5:63:3f:
-       9d:7b:0d:a7:9c:98:f2:97:b6:fd:43:a1:d1:36:30:
-       17:e8:20:d1:5f:f7:a1:0a:d0:06:90:78:ba:4c:10:
-       1a:be:15:98:93:9c:d0:46:8b:68:1e:71:2f:72:1e:
-       4c:d1:8f:a7:53:45:df:19:1a:74:8b:b2:95:3f:12:
-       31:5c:f0:0e:c6:35:c6:4a:14:eb:da:d6:ba:9b:e0:
-       40:ed:d5:a2:57:9b:d3:a3:b6:f6:e1:4d:23:4b:b0:
-       bd:d5:f8:7d:3c:36:05:0e:27:7f:55:d5:88:9d:d6:
-       1b:2e:39:31:70:d0:86:53:9c:43:ae:90:d4:6e:6e:
-       cf:48:93:2f:e3:9e:90:96:77:bb:f4:a1:fa:35:6a:
-       3a:d5:4f:94:f5:8f:5c:36:f1:00:d4:eb:33:5e:ff:
-       e6:da:51:24:74:ff:c6:12:2b:6f:c8:ca:31:61:cf:
-       67:4f:69:6d:34:7d:ff:00:06:26:00:e8:d4:21:26:
-       b2:91:e7:e6:50:c5:55:16:cc:ff:97:03:3e:d3:ac:
-       c1:41:7c:e0:68:70:b8:df:8e:fa:a6:7b:35:23:07:
-       8d:73:87:27:de:98:06:4c:c0:fc:51:e9:28:01:8f:
-       5d:6b:06:ea:ca:63:86:2a:c2:39:7c:5e:47:93:76:
-       0a:d5:38:d0:6d:ea:b3:84:f5:9f:e0:88:95:c2:02:
-       4f:12:46:60:8b:3b:25:b9:bc:f4:cc:db:6e:49:24:
-       49:24:51:50:1b:79:c6:3f:3d:c9:fc:73:c3:97:c9:
-       f1:df:47:d7:ea:0e:03:20:0c:d5:9b:bb:4d:a4:cc:
-       de:1a:98:69:3f:05:77:e8:e3:3f:89:da:99:8c:38:
-       31:dd:8d:a0:3b:87:a7:1d:92:b8:8f:c4:de:4d:30:
-       5b:0b:60:51:c1:a0:34:3e:15:b1:84:a5:a8:c8:3b:
-       8c:5f:0f:be:2f:bf:71:b8:15:27:f7:40:b1:4f:3b:
-       0a:85:f3:e5:ce:13:91:eb:b3:73:70:b9:b2:2c:49:
-       2d:5c:ef:10:df:6c:cb:1b:08:df:19:19:61:48:e4:
-       b2:d2:f1:11:5c:dc:2d:4b:fb:7a:1b:97:84:20:e6:
-       9e:ff:a1:d6:ba:ff:58:ab:e3:2a:8a:14:6d:d2:ee:
-       9f:71:38:63:65:ed:5c:76:76:a6:36:12:c9:99:fd:
-       5d:3f:ad:e5:b4:20:ae:69:44:3a:0e:01:3c:2b:48:
-       58:f0:f4:2f:47:3f:58:35:5b:6e:8d:6b:5b:6d:e5:
-       8a:79:11:dc:24:fa:bc:95:a5:c0:b6:1c:b1:33:23:
-       0f:5b:d4:63:e0:1d:b6:4f:4c:ce:ae:f5:91:51:f5:
-       0e:8d:c3
-   
-generator: 2 (0x2)
-
-
-$ openssl dhparam -check -in <filename>
-
-DH parameters appear to be ok.
------BEGIN DH PARAMETERS-----
-MIICCAKCAgEAjxHSevSz8gGKWUzVYz+dew2nnJjyl7b9Q6HRNjAX6CDRX/ehCtAG
-kHi6TBAavhWYk5zQRotoHnEvch5M0Y+nU0XfGRp0i7KVPxIxXPAOxjXGShTr2ta6
-m+BA7dWiV5vTo7b24U0jS7C91fh9PDYFDid/VdWIndYbLjkxcNCGU5xDrpDUbm7P
-SJMv456Qlne79KH6NWo61U+U9Y9cNvEA1OszXv/m2lEkdP/GEitvyMoxYc9nT2lt
-NH3/AAYmAOjUISaykefmUMVVFsz/lwM+06zBQXzgaHC43476pns1IweNc4cn3pgG
-TMD8UekoAY9dawbqymOGKsI5fF5Hk3YK1TjQbeqzhPWf4IiVwgJPEkZgizslubz0
-zNtuSSRJJFFQG3nGPz3J/HPDl8nx30fX6g4DIAzVm7tNpMzeGphpPwV36OM/idqZ
-jDgx3Y2gO4enHZK4j8TeTTBbC2BRwaA0PhWxhKWoyDuMXw++L79xuBUn90CxTzsK
-hfPlzhOR67NzcLmyLEktXO8Q32zLGwjfGRlhSOSy0vERXNwtS/t6G5eEIOae/6HW
-uv9Yq+MqihRt0u6fcThjZe1cdnamNhLJmf1dP63ltCCuaUQ6DgE8K0hY8PQvRz9Y
-NVtujWtbbeWKeRHcJPq8laXAthyxMyMPW9Rj4B22T0zOrvWRUfUOjcMCAQI=
------END DH PARAMETERS-----
-
-
-hex strings formatted for Python:
-
-dhparams = {'p': b'008f11d27af4b3f2018a594cd5633f9d7b0da79c98f29\
-7b6fd43a1d1363017e820d15ff7a10ad0069078ba4c101abe1598939cd0468b6\
-81e712f721e4cd18fa75345df191a748bb2953f12315cf00ec635c64a14ebdad\
-6ba9be040edd5a2579bd3a3b6f6e14d234bb0bdd5f87d3c36050e277f55d5889\
-dd61b2e393170d086539c43ae90d46e6ecf48932fe39e909677bbf4a1fa356a3\
-ad54f94f58f5c36f100d4eb335effe6da512474ffc6122b6fc8ca3161cf674f6\
-96d347dff00062600e8d42126b291e7e650c55516ccff97033ed3acc1417ce06\
-870b8df8efaa67b3523078d738727de98064cc0fc51e928018f5d6b06eaca638\
-62ac2397c5e4793760ad538d06deab384f59fe08895c2024f1246608b3b25b9b\
-cf4ccdb6e4924492451501b79c63f3dc9fc73c397c9f1df47d7ea0e03200cd59\
-bbb4da4ccde1a98693f0577e8e33f89da998c3831dd8da03b87a71d92b88fc4d\
-e4d305b0b6051c1a0343e15b184a5a8c83b8c5f0fbe2fbf71b81527f740b14f3\
-b0a85f3e5ce1391ebb37370b9b22c492d5cef10df6ccb1b08df19196148e4b2d\
-2f1115cdc2d4bfb7a1b978420e69effa1d6baff58abe32a8a146dd2ee9f71386\
-365ed5c7676a63612c999fd5d3fade5b420ae69443a0e013c2b4858f0f42f473\
-f58355b6e8d6b5b6de58a7911dc24fabc95a5c0b61cb133230f5bd463e01db64\
-f4cceaef59151f50e8dc3', 'g': b'02'}
+   output:
+          DH Parameters: (4096 bit)
+              prime:
+                  00:8f:11:d2:7a:f4:b3:f2:01:8a:59:4c:d5:63:3f:
+                  9d:7b:0d:a7:9c:98:f2:97:b6:fd:43:a1:d1:36:30:
+                  17:e8:20:d1:5f:f7:a1:0a:d0:06:90:78:ba:4c:10:
+                  1a:be:15:98:93:9c:d0:46:8b:68:1e:71:2f:72:1e:
+                  4c:d1:8f:a7:53:45:df:19:1a:74:8b:b2:95:3f:12:
+                  31:5c:f0:0e:c6:35:c6:4a:14:eb:da:d6:ba:9b:e0:
+                  40:ed:d5:a2:57:9b:d3:a3:b6:f6:e1:4d:23:4b:b0:
+                  bd:d5:f8:7d:3c:36:05:0e:27:7f:55:d5:88:9d:d6:
+                  1b:2e:39:31:70:d0:86:53:9c:43:ae:90:d4:6e:6e:
+                  cf:48:93:2f:e3:9e:90:96:77:bb:f4:a1:fa:35:6a:
+                  3a:d5:4f:94:f5:8f:5c:36:f1:00:d4:eb:33:5e:ff:
+                  e6:da:51:24:74:ff:c6:12:2b:6f:c8:ca:31:61:cf:
+                  67:4f:69:6d:34:7d:ff:00:06:26:00:e8:d4:21:26:
+                  b2:91:e7:e6:50:c5:55:16:cc:ff:97:03:3e:d3:ac:
+                  c1:41:7c:e0:68:70:b8:df:8e:fa:a6:7b:35:23:07:
+                  8d:73:87:27:de:98:06:4c:c0:fc:51:e9:28:01:8f:
+                  5d:6b:06:ea:ca:63:86:2a:c2:39:7c:5e:47:93:76:
+                  0a:d5:38:d0:6d:ea:b3:84:f5:9f:e0:88:95:c2:02:
+                  4f:12:46:60:8b:3b:25:b9:bc:f4:cc:db:6e:49:24:
+                  49:24:51:50:1b:79:c6:3f:3d:c9:fc:73:c3:97:c9:
+                  f1:df:47:d7:ea:0e:03:20:0c:d5:9b:bb:4d:a4:cc:
+                  de:1a:98:69:3f:05:77:e8:e3:3f:89:da:99:8c:38:
+                  31:dd:8d:a0:3b:87:a7:1d:92:b8:8f:c4:de:4d:30:
+                  5b:0b:60:51:c1:a0:34:3e:15:b1:84:a5:a8:c8:3b:
+                  8c:5f:0f:be:2f:bf:71:b8:15:27:f7:40:b1:4f:3b:
+                  0a:85:f3:e5:ce:13:91:eb:b3:73:70:b9:b2:2c:49:
+                  2d:5c:ef:10:df:6c:cb:1b:08:df:19:19:61:48:e4:
+                  b2:d2:f1:11:5c:dc:2d:4b:fb:7a:1b:97:84:20:e6:
+                  9e:ff:a1:d6:ba:ff:58:ab:e3:2a:8a:14:6d:d2:ee:
+                  9f:71:38:63:65:ed:5c:76:76:a6:36:12:c9:99:fd:
+                  5d:3f:ad:e5:b4:20:ae:69:44:3a:0e:01:3c:2b:48:
+                  58:f0:f4:2f:47:3f:58:35:5b:6e:8d:6b:5b:6d:e5:
+                  8a:79:11:dc:24:fa:bc:95:a5:c0:b6:1c:b1:33:23:
+                  0f:5b:d4:63:e0:1d:b6:4f:4c:ce:ae:f5:91:51:f5:
+                  0e:8d:c3
+              generator: 2 (0x2)
+      DH parameters appear to be ok.
+      -----BEGIN DH PARAMETERS-----
+      MIICCAKCAgEAjxHSevSz8gGKWUzVYz+dew2nnJjyl7b9Q6HRNjAX6CDRX/ehCtAG
+      kHi6TBAavhWYk5zQRotoHnEvch5M0Y+nU0XfGRp0i7KVPxIxXPAOxjXGShTr2ta6
+      m+BA7dWiV5vTo7b24U0jS7C91fh9PDYFDid/VdWIndYbLjkxcNCGU5xDrpDUbm7P
+      SJMv456Qlne79KH6NWo61U+U9Y9cNvEA1OszXv/m2lEkdP/GEitvyMoxYc9nT2lt
+      NH3/AAYmAOjUISaykefmUMVVFsz/lwM+06zBQXzgaHC43476pns1IweNc4cn3pgG
+      TMD8UekoAY9dawbqymOGKsI5fF5Hk3YK1TjQbeqzhPWf4IiVwgJPEkZgizslubz0
+      zNtuSSRJJFFQG3nGPz3J/HPDl8nx30fX6g4DIAzVm7tNpMzeGphpPwV36OM/idqZ
+      jDgx3Y2gO4enHZK4j8TeTTBbC2BRwaA0PhWxhKWoyDuMXw++L79xuBUn90CxTzsK
+      hfPlzhOR67NzcLmyLEktXO8Q32zLGwjfGRlhSOSy0vERXNwtS/t6G5eEIOae/6HW
+      uv9Yq+MqihRt0u6fcThjZe1cdnamNhLJmf1dP63ltCCuaUQ6DgE8K0hY8PQvRz9Y
+      NVtujWtbbeWKeRHcJPq8laXAthyxMyMPW9Rj4B22T0zOrvWRUfUOjcMCAQI=
+      -----END DH PARAMETERS-----
 
 
+######################################################################
+# 4096 safe prime #2
+
+      -----BEGIN DH PARAMETERS-----
+      MIICCAKCAgEAtOdciNFS6I8eYJD+nr+g94U8HjRr/gDT1DsspLQN32DGtR0rQyS1
+      etYmEEF2SUz+e9mKkvsOTqlzUEzei3uwdVvKvXEKJOtWEntMVRIEyvjqo3TwZcGb
+      JH47VllIHn6yG5zElfR929eo0jJLCWKDmZZXxtvn5KyttE6a0HcbL+eBmQHO4q1J
+      RBXtxt1IPI8cpcxCvPDiO2CeUxqmocVGdGSnc1QbiYejn6pjQNFCALLguqp+PlKy
+      bF4Swf6gpS7NRsdBHZd0uKihvaq+9BPFEJFpHmkE8ITMhF/70aWNJNNoxkDQEi8F
+      7HGXDKlBhJsaAkW1lxY/soA6oFfpBsZsih/b+RvSqYJjAdLpkzbQh75QeCZu/ycA
+      ZjPRkfLyPIixEPvZVVdoQleiIHTXCBK6WR4fmEHYXpQ1juZsxOHeNQl/3USbPgYu
+      455k0IyBvO9mbr7e70l9faox7/b319FZitJ9RRIYyKu79fFb/RFFeL1xC++iJc4S
+      YOYfI+SgKqiYN4sKpFD8Tb9xVaNb4VuhKtOrukSlAMHHr/ZArYfLP2LNSALG8csa
+      DxpRZZBX1FE7h7UkUiBqPaPxsQjdx8dkMMMf28tMRSo9aCFRWZCfekqwu0cGFZ7g
+      ogfZVkJnfduBPMD7QQTpn8Eu26n97SFmymTWALizf4IFBak9RVkbYusCAQI=
+      -----END DH PARAMETERS-----
 
 
+   formatted for Python:
 
-################################################################
-# another 4096 safe prime
+      dhparams = {'p': b'00b4e75c88d152e88f1e6090fe9ebfa0f7853c1e346bf\
+      e00d3d43b2ca4b40ddf60c6b51d2b4324b57ad626104176494cfe7bd98a92fb0\
+      e4ea973504cde8b7bb0755bcabd710a24eb56127b4c551204caf8eaa374f065c\
+      19b247e3b5659481e7eb21b9cc495f47ddbd7a8d2324b096283999657c6dbe7e\
+      4acadb44e9ad0771b2fe7819901cee2ad494415edc6dd483c8f1ca5cc42bcf0e\
+      23b609e531aa6a1c5467464a773541b8987a39faa6340d14200b2e0baaa7e3e5\
+      2b26c5e12c1fea0a52ecd46c7411d9774b8a8a1bdaabef413c51091691e6904f\
+      084cc845ffbd1a58d24d368c640d0122f05ec71970ca941849b1a0245b597163\
+      fb2803aa057e906c66c8a1fdbf91bd2a9826301d2e99336d087be5078266eff2\
+      7006633d191f2f23c88b110fbd95557684257a22074d70812ba591e1f9841d85\
+      e94358ee66cc4e1de35097fdd449b3e062ee39e64d08c81bcef666ebedeef497\
+      d7daa31eff6f7d7d1598ad27d451218c8abbbf5f15bfd114578bd710befa225c\
+      e1260e61f23e4a02aa898378b0aa450fc4dbf7155a35be15ba12ad3abba44a50\
+      0c1c7aff640ad87cb3f62cd4802c6f1cb1a0f1a51659057d4513b87b52452206\
+      a3da3f1b108ddc7c76430c31fdbcb4c452a3d68215159909f7a4ab0bb4706159\
+      ee0a207d95642677ddb813cc0fb4104e99fc12edba9fded2166ca64d600b8b37\
+      f820505a93d45591b62eb', 'g': b'02'}
 
-Diffie-Hellman-Parameters: (4096 bit)
+   to validate:
+      $ openssl dhparam -text -check -in <filepath_to_PEM_block>
 
-   prime:
-       00:b4:e7:5c:88:d1:52:e8:8f:1e:60:90:fe:9e:bf:
-       a0:f7:85:3c:1e:34:6b:fe:00:d3:d4:3b:2c:a4:b4:
-       0d:df:60:c6:b5:1d:2b:43:24:b5:7a:d6:26:10:41:
-       76:49:4c:fe:7b:d9:8a:92:fb:0e:4e:a9:73:50:4c:
-       de:8b:7b:b0:75:5b:ca:bd:71:0a:24:eb:56:12:7b:
-       4c:55:12:04:ca:f8:ea:a3:74:f0:65:c1:9b:24:7e:
-       3b:56:59:48:1e:7e:b2:1b:9c:c4:95:f4:7d:db:d7:
-       a8:d2:32:4b:09:62:83:99:96:57:c6:db:e7:e4:ac:
-       ad:b4:4e:9a:d0:77:1b:2f:e7:81:99:01:ce:e2:ad:
-       49:44:15:ed:c6:dd:48:3c:8f:1c:a5:cc:42:bc:f0:
-       e2:3b:60:9e:53:1a:a6:a1:c5:46:74:64:a7:73:54:
-       1b:89:87:a3:9f:aa:63:40:d1:42:00:b2:e0:ba:aa:
-       7e:3e:52:b2:6c:5e:12:c1:fe:a0:a5:2e:cd:46:c7:
-       41:1d:97:74:b8:a8:a1:bd:aa:be:f4:13:c5:10:91:
-       69:1e:69:04:f0:84:cc:84:5f:fb:d1:a5:8d:24:d3:
-       68:c6:40:d0:12:2f:05:ec:71:97:0c:a9:41:84:9b:
-       1a:02:45:b5:97:16:3f:b2:80:3a:a0:57:e9:06:c6:
-       6c:8a:1f:db:f9:1b:d2:a9:82:63:01:d2:e9:93:36:
-       d0:87:be:50:78:26:6e:ff:27:00:66:33:d1:91:f2:
-       f2:3c:88:b1:10:fb:d9:55:57:68:42:57:a2:20:74:
-       d7:08:12:ba:59:1e:1f:98:41:d8:5e:94:35:8e:e6:
-       6c:c4:e1:de:35:09:7f:dd:44:9b:3e:06:2e:e3:9e:
-       64:d0:8c:81:bc:ef:66:6e:be:de:ef:49:7d:7d:aa:
-       31:ef:f6:f7:d7:d1:59:8a:d2:7d:45:12:18:c8:ab:
-       bb:f5:f1:5b:fd:11:45:78:bd:71:0b:ef:a2:25:ce:
-       12:60:e6:1f:23:e4:a0:2a:a8:98:37:8b:0a:a4:50:
-       fc:4d:bf:71:55:a3:5b:e1:5b:a1:2a:d3:ab:ba:44:
-       a5:00:c1:c7:af:f6:40:ad:87:cb:3f:62:cd:48:02:
-       c6:f1:cb:1a:0f:1a:51:65:90:57:d4:51:3b:87:b5:
-       24:52:20:6a:3d:a3:f1:b1:08:dd:c7:c7:64:30:c3:
-       1f:db:cb:4c:45:2a:3d:68:21:51:59:90:9f:7a:4a:
-       b0:bb:47:06:15:9e:e0:a2:07:d9:56:42:67:7d:db:
-       81:3c:c0:fb:41:04:e9:9f:c1:2e:db:a9:fd:ed:21:
-       66:ca:64:d6:00:b8:b3:7f:82:05:05:a9:3d:45:59:
-       1b:62:eb
-
-   generator: 2 (0x2)
-
-
-$ openssl dhparam -check -in <filename>
-
-DH parameters appear to be ok.
------BEGIN DH PARAMETERS-----
-MIICCAKCAgEAtOdciNFS6I8eYJD+nr+g94U8HjRr/gDT1DsspLQN32DGtR0rQyS1
-etYmEEF2SUz+e9mKkvsOTqlzUEzei3uwdVvKvXEKJOtWEntMVRIEyvjqo3TwZcGb
-JH47VllIHn6yG5zElfR929eo0jJLCWKDmZZXxtvn5KyttE6a0HcbL+eBmQHO4q1J
-RBXtxt1IPI8cpcxCvPDiO2CeUxqmocVGdGSnc1QbiYejn6pjQNFCALLguqp+PlKy
-bF4Swf6gpS7NRsdBHZd0uKihvaq+9BPFEJFpHmkE8ITMhF/70aWNJNNoxkDQEi8F
-7HGXDKlBhJsaAkW1lxY/soA6oFfpBsZsih/b+RvSqYJjAdLpkzbQh75QeCZu/ycA
-ZjPRkfLyPIixEPvZVVdoQleiIHTXCBK6WR4fmEHYXpQ1juZsxOHeNQl/3USbPgYu
-455k0IyBvO9mbr7e70l9faox7/b319FZitJ9RRIYyKu79fFb/RFFeL1xC++iJc4S
-YOYfI+SgKqiYN4sKpFD8Tb9xVaNb4VuhKtOrukSlAMHHr/ZArYfLP2LNSALG8csa
-DxpRZZBX1FE7h7UkUiBqPaPxsQjdx8dkMMMf28tMRSo9aCFRWZCfekqwu0cGFZ7g
-ogfZVkJnfduBPMD7QQTpn8Eu26n97SFmymTWALizf4IFBak9RVkbYusCAQI=
------END DH PARAMETERS-----
+   output:
+          DH Parameters: (4096 bit)
+              prime:
+                  00:b4:e7:5c:88:d1:52:e8:8f:1e:60:90:fe:9e:bf:
+                  a0:f7:85:3c:1e:34:6b:fe:00:d3:d4:3b:2c:a4:b4:
+                  0d:df:60:c6:b5:1d:2b:43:24:b5:7a:d6:26:10:41:
+                  76:49:4c:fe:7b:d9:8a:92:fb:0e:4e:a9:73:50:4c:
+                  de:8b:7b:b0:75:5b:ca:bd:71:0a:24:eb:56:12:7b:
+                  4c:55:12:04:ca:f8:ea:a3:74:f0:65:c1:9b:24:7e:
+                  3b:56:59:48:1e:7e:b2:1b:9c:c4:95:f4:7d:db:d7:
+                  a8:d2:32:4b:09:62:83:99:96:57:c6:db:e7:e4:ac:
+                  ad:b4:4e:9a:d0:77:1b:2f:e7:81:99:01:ce:e2:ad:
+                  49:44:15:ed:c6:dd:48:3c:8f:1c:a5:cc:42:bc:f0:
+                  e2:3b:60:9e:53:1a:a6:a1:c5:46:74:64:a7:73:54:
+                  1b:89:87:a3:9f:aa:63:40:d1:42:00:b2:e0:ba:aa:
+                  7e:3e:52:b2:6c:5e:12:c1:fe:a0:a5:2e:cd:46:c7:
+                  41:1d:97:74:b8:a8:a1:bd:aa:be:f4:13:c5:10:91:
+                  69:1e:69:04:f0:84:cc:84:5f:fb:d1:a5:8d:24:d3:
+                  68:c6:40:d0:12:2f:05:ec:71:97:0c:a9:41:84:9b:
+                  1a:02:45:b5:97:16:3f:b2:80:3a:a0:57:e9:06:c6:
+                  6c:8a:1f:db:f9:1b:d2:a9:82:63:01:d2:e9:93:36:
+                  d0:87:be:50:78:26:6e:ff:27:00:66:33:d1:91:f2:
+                  f2:3c:88:b1:10:fb:d9:55:57:68:42:57:a2:20:74:
+                  d7:08:12:ba:59:1e:1f:98:41:d8:5e:94:35:8e:e6:
+                  6c:c4:e1:de:35:09:7f:dd:44:9b:3e:06:2e:e3:9e:
+                  64:d0:8c:81:bc:ef:66:6e:be:de:ef:49:7d:7d:aa:
+                  31:ef:f6:f7:d7:d1:59:8a:d2:7d:45:12:18:c8:ab:
+                  bb:f5:f1:5b:fd:11:45:78:bd:71:0b:ef:a2:25:ce:
+                  12:60:e6:1f:23:e4:a0:2a:a8:98:37:8b:0a:a4:50:
+                  fc:4d:bf:71:55:a3:5b:e1:5b:a1:2a:d3:ab:ba:44:
+                  a5:00:c1:c7:af:f6:40:ad:87:cb:3f:62:cd:48:02:
+                  c6:f1:cb:1a:0f:1a:51:65:90:57:d4:51:3b:87:b5:
+                  24:52:20:6a:3d:a3:f1:b1:08:dd:c7:c7:64:30:c3:
+                  1f:db:cb:4c:45:2a:3d:68:21:51:59:90:9f:7a:4a:
+                  b0:bb:47:06:15:9e:e0:a2:07:d9:56:42:67:7d:db:
+                  81:3c:c0:fb:41:04:e9:9f:c1:2e:db:a9:fd:ed:21:
+                  66:ca:64:d6:00:b8:b3:7f:82:05:05:a9:3d:45:59:
+                  1b:62:eb
+              generator: 2 (0x2)
+      DH parameters appear to be ok.
+      -----BEGIN DH PARAMETERS-----
+      MIICCAKCAgEAtOdciNFS6I8eYJD+nr+g94U8HjRr/gDT1DsspLQN32DGtR0rQyS1
+      etYmEEF2SUz+e9mKkvsOTqlzUEzei3uwdVvKvXEKJOtWEntMVRIEyvjqo3TwZcGb
+      JH47VllIHn6yG5zElfR929eo0jJLCWKDmZZXxtvn5KyttE6a0HcbL+eBmQHO4q1J
+      RBXtxt1IPI8cpcxCvPDiO2CeUxqmocVGdGSnc1QbiYejn6pjQNFCALLguqp+PlKy
+      bF4Swf6gpS7NRsdBHZd0uKihvaq+9BPFEJFpHmkE8ITMhF/70aWNJNNoxkDQEi8F
+      7HGXDKlBhJsaAkW1lxY/soA6oFfpBsZsih/b+RvSqYJjAdLpkzbQh75QeCZu/ycA
+      ZjPRkfLyPIixEPvZVVdoQleiIHTXCBK6WR4fmEHYXpQ1juZsxOHeNQl/3USbPgYu
+      455k0IyBvO9mbr7e70l9faox7/b319FZitJ9RRIYyKu79fFb/RFFeL1xC++iJc4S
+      YOYfI+SgKqiYN4sKpFD8Tb9xVaNb4VuhKtOrukSlAMHHr/ZArYfLP2LNSALG8csa
+      DxpRZZBX1FE7h7UkUiBqPaPxsQjdx8dkMMMf28tMRSo9aCFRWZCfekqwu0cGFZ7g
+      ogfZVkJnfduBPMD7QQTpn8Eu26n97SFmymTWALizf4IFBak9RVkbYusCAQI=
+      -----END DH PARAMETERS-----
 
 
-formatted for Python:
-
-dhparams = {'p': b'00b4e75c88d152e88f1e6090fe9ebfa0f7853c1e346bf\
-e00d3d43b2ca4b40ddf60c6b51d2b4324b57ad626104176494cfe7bd98a92fb0\
-e4ea973504cde8b7bb0755bcabd710a24eb56127b4c551204caf8eaa374f065c\
-19b247e3b5659481e7eb21b9cc495f47ddbd7a8d2324b096283999657c6dbe7e\
-4acadb44e9ad0771b2fe7819901cee2ad494415edc6dd483c8f1ca5cc42bcf0e\
-23b609e531aa6a1c5467464a773541b8987a39faa6340d14200b2e0baaa7e3e5\
-2b26c5e12c1fea0a52ecd46c7411d9774b8a8a1bdaabef413c51091691e6904f\
-084cc845ffbd1a58d24d368c640d0122f05ec71970ca941849b1a0245b597163\
-fb2803aa057e906c66c8a1fdbf91bd2a9826301d2e99336d087be5078266eff2\
-7006633d191f2f23c88b110fbd95557684257a22074d70812ba591e1f9841d85\
-e94358ee66cc4e1de35097fdd449b3e062ee39e64d08c81bcef666ebedeef497\
-d7daa31eff6f7d7d1598ad27d451218c8abbbf5f15bfd114578bd710befa225c\
-e1260e61f23e4a02aa898378b0aa450fc4dbf7155a35be15ba12ad3abba44a50\
-0c1c7aff640ad87cb3f62cd4802c6f1cb1a0f1a51659057d4513b87b52452206\
-a3da3f1b108ddc7c76430c31fdbcb4c452a3d68215159909f7a4ab0bb4706159\
-ee0a207d95642677ddb813cc0fb4104e99fc12edba9fded2166ca64d600b8b37\
-f820505a93d45591b62eb', 'g': b'02'}
-
+######################################################################
+######################################################################
+######################################################################
