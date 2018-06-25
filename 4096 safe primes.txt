@@ -1,17 +1,21 @@
-# These are 4096-bit safe primes (512 bytes) packaged as 
-# parameters suitable for a Diffie-Hellman exchange.  Any 
-# number of users may re-use these parameters to initiate 
-# any number of DH key agreements.  (Both users of a DH 
+######################################################################
+#
+# These are 4096-bit safe primes (512 bytes) packaged as
+# parameters suitable for a Diffie-Hellman exchange.  Any
+# number of users may re-use these parameters to initiate
+# any number of DH key agreements.  (Both users of a DH
 # exchange must agree to use the same parameters.)
 #
-# THESE NUMBERS ARE MADE AVAILABLE "AS-IS" WITHOUT WARRANTY 
-# OR GUARANTEE OF ANY KIND, EXPRESS OR IMPLIED, UNDER ANY 
-# AND ALL CONDITIONS, NO EXCEPTIONS.  USE SIGNIFIES ACCEPTANCE 
+# THESE NUMBERS ARE MADE AVAILABLE "AS-IS" WITHOUT WARRANTY
+# OR GUARANTEE OF ANY KIND, EXPRESS OR IMPLIED, UNDER ANY
+# AND ALL CONDITIONS, NO EXCEPTIONS.  USE SIGNIFIES ACCEPTANCE
 # OF ALL RISK AND CONSEQUENCES.
 #
-# These numbers are free for any use.  
+# These numbers are free for any use.
 #
-
+# Larry Bugbee
+# May 2005
+#
 ######################################################################
 # 4096 safe prime #1
 
@@ -126,7 +130,6 @@
 
 
    formatted for Python:
-
       dhparams = {'p': b'00b4e75c88d152e88f1e6090fe9ebfa0f7853c1e346bf\
       e00d3d43b2ca4b40ddf60c6b51d2b4324b57ad626104176494cfe7bd98a92fb0\
       e4ea973504cde8b7bb0755bcabd710a24eb56127b4c551204caf8eaa374f065c\
